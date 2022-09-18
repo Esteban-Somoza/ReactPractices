@@ -37,7 +37,7 @@ h1 {
   line-height: 1.1;
 }
 
-button {
+.create {
   border-radius: 8px;
   border: 1px solid transparent;
   padding: 0.6em 1.2em;
@@ -48,11 +48,11 @@ button {
   cursor: pointer;
   transition: border-color 0.25s;
 }
-button:hover {
+.create:hover {
   border-color: #646cff;
 }
-button:focus,
-button:focus-visible {
+.create:focus,
+.create:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
 
@@ -64,7 +64,72 @@ button:focus-visible {
   a:hover {
     color: #747bff;
   }
-  button {
+  .create {
     background-color: #f9f9f9;
   }
+}
+
+/*  */
+.grillaGifs {
+  padding: 0;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 5px;
+    grid-row-gap: 5px;
+    }
+    
+    .div1 { grid-area: 1 / 1 / 2 / 2; }
+    .div2 { grid-area: 1 / 2 / 2 / 3; }
+    .div3 { grid-area: 1 / 3 / 2 / 4; }
+    .div4 { grid-area: 1 / 4 / 2 / 5; }
+    .div5 { grid-area: 1 / 5 / 2 / 6; }
+    .div6 { grid-area: 2 / 1 / 3 / 2; }
+    .div7 { grid-area: 2 / 2 / 3 / 3; }
+    .div8 { grid-area: 2 / 3 / 3 / 4; }
+    .div9 { grid-area: 2 / 4 / 3 / 5; }
+    .div10 { grid-area: 2 / 5 / 3 / 6; }
+    .div11 { grid-area: 3 / 5 / 4 / 6; }
+    .div12 { grid-area: 3 / 5 / 4 / 6; }
+
+
+.gifs {
+  list-style: none;
+  overflow:hidden;
+  height: 100%;
+}
+
+.gifs img {
+  border-radius: 1em;
+  width: 200px;
+  /* height: 200px; */
+  height: 100%;
+  object-fit: cover;
+  /* overflow-y: hidden; */
+}
+
+.btn {
+  display: flex;
+  margin: auto;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  margin: 2em 0;
+  gap: 2em;
+  /* position: absolute; */
+}
+
+.cancelar {
+  background-color: #1a1a1a;
+  padding: .5em;
+  border-radius: 50%;
+  height:2.5em;
+  width:2.5em;
+  position: relative;
+  right: 3em;
+  bottom: 13em;
+  font-weight: light;
 }
